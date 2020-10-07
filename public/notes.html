@@ -9,13 +9,41 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link href="assets/js/index.js">
 </head>
 
+<style>
+  .homebtn:hover {
+    background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red,  violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: rgb(155, 79, 150);
+}
+
+.card {
+  background-color: rgb(155, 79, 150);
+}
+
+.list-group-item {
+  background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red,  violet);
+ font-size: 35px;
+ font-family: 'Sansita Swashed', cursive;
+}
+
+.note-textarea {
+  font-size: 25px;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.textcardsum {
+  background-color: rgb(0, 56, 168);;
+}
+</style>
 <body>
-  <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Note Taker
+  <nav class="navbar navbar-dark">
+    <a id="homebtn" class="navbar-brand" href="/">Home
     </a>
     <div class="icons">
       <i class="fas fa-save text-light save-note"></i>
@@ -30,9 +58,9 @@
           </ul>
         </div>
       </div>
-      <div class="col-8">
-        <input class="note-title" placeholder="Note Title" maxlength="28" type="text">
-        <textarea class="note-textarea" placeholder="Note Text"></textarea>
+      <div class="col-8 textcardsum">
+        <input class="note-title textcardsum" placeholder="Note Title" maxlength="28" type="text">
+        <textarea class="note-textarea textcardsum" placeholder="Note Text"></textarea>
       </div>
     </div>
   </div>
